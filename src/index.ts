@@ -10,6 +10,9 @@ import cookieSession from "cookie-session";
 import morgan from "morgan";
 import errorPage from "./404";
 
+// load .env.local first
+config({ path: '.env.local' });
+// load .env file
 config();
 
 const PORT = process.env.PORT || 3000;
